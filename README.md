@@ -1,15 +1,5 @@
-# Printf-42
-Prints a string on the screen using a “format string”
+# ft_printf
 
-To run funtions use-> gcc -Wall -Wextra -Werror ft_printf.c ft_putchar.c ft_putstr.c ft_itoa.c ft_puthex.c main.c
+This project now lives in **[42-Libft-C](https://github.com/fasharif/42-Libft-C/tree/main/ft_printf)**, as part of my C library, with tests on Linux and macOS. This repository is kept as it was, for reference.
 
-For Testing
-https://github.com/Tripouille/printfTester
-
-https://github.com/paulo-santana/ft_printf_tester
-
-How to write C functions with variable argument lists.
-
-https://www.youtube.com/watch?v=S-ak715zIIE
-
-https://www.youtube.com/watch?v=S-ak715zIIE
+`ft_printf` re-implements `printf` for `%c %s %p %d %i %u %x %X %%`. The version in libft also fixes a portability bug: the `va_list` was passed by value to a helper function, which breaks on ARM64 processors such as Apple Silicon.
